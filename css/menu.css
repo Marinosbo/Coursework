@@ -72,6 +72,7 @@
   height: 35px;
   border-radius: 50%;
 }
+
 .profile-link:hover img {
   transform: scale(1.1);
 }
@@ -79,4 +80,3 @@
   background-color: transparent;
   box-shadow: none;
 }
-  

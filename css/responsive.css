@@ -1,189 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 @media (max-width: 768px) {
-    #searchInput {
-        width: 80%;
+    .menu-container {
+        position: absolute;
+        top: 30px;
+        right: 1px;
+        margin-right: 5px; 
+        display: flex;
+        gap: 5px; 
     }
+    .menu-buttons {
 
-    .container-myths, .container-legends {
+        display: flex;
+        gap: 5px;
+    }
+    .menu-icon {
+        display: block;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .menu {
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 30px 15px;
+        min-height: 40px;
+    }
+    .profile-link img {
+        width: 40px;
+        height: 40px;
+    }
+    .card {
+        width: 90%;
+        max-width: 400px;
+    }
+    .header-icon {
+        margin-left: -30px;
+    }
+    .container-countries   
+    {
+        padding: 150px 20px;
+        display: grid;  
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px; 
+        justify-items: center;
+    }
+    .card-text
+    {
+        font-size: 26px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 20px;
+        padding: 20px;
+    }
+    .footer-columns {
         display: flex;
         flex-direction: column;
         gap: 15px;
-        align-items: center;
-        padding: 10px;
+        align-items: left;
     }
-
-    .myth-card, .legend-card {
-        width: 90%;
-        max-width: 400px;
-    }
-
-    .container-myths .myth-card, .container-legends .legend-card {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .myth-card img, .legend-card img {
-        height: auto;
-        max-height: 200px;
-        object-fit: cover;
-    }
-
-    .myth-text, .legend-text {
-        font-size: 30px;
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        text-align: left;
-        padding: 20px;
-    }
-
-    .footer-columns {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
     .footer-left {
-        flex: 1;
-        text-align: left;
-        padding: 0;
-        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .footer-left ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .footer-right {
-        flex: 1;
-        text-align: right;
-        padding: 0;
-        margin: 0;
-    }
-
-    .footer-right ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .footer-bottom {
+    .footer-left ul, .footer-right ul {
         font-size: 12px;
-        margin-top: 15px;
-        padding-top: 10px;
+    }
+
+    .footer-right img {
+        margin-bottom: 10px;
+        width: 25px;
+        height: 25px;
+    }
+    .footer-bottom {
+        font-size: 10px;
+        margin-top: 10px;
         text-align: center;
     }
 }
-
 @media (min-width: 768px) and (max-width: 1024px) {
-    #searchInput {
-        width: 60%;
+    .menu {
+        font-weight: bold;
+        font-size: 18px;
     }
-
-    .container-myths, .container-legends {
+    .menu-container {
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        margin-right: 5px; 
         display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        padding: 10px;
+        gap: 5px; 
     }
-
-    .myth-card, .legend-card {
-        width: 90%;
-        max-width: 400px;
+    .menu-icon {
+        display: block;
+        font-size: 14px;
+        cursor: pointer;
     }
-
-    .myth-card img, .legend-card img {
+    .header-icon img {
+        width: 50px;
         height: auto;
-        max-height: 250px;
-        object-fit: cover;
     }
-
-    .myth-text, .legend-text {
-        font-size: 35px;
-    }
-
-    .footer {
+    .menu-buttons {
         display: flex;
+        gap: 5px;
+    }
+    .menu-buttons .menu {
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+        padding: 10px 15px;
+    }
+    .header-icon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .profile-link img {
+        width: 40px;
+        height: 40px;
+    }
+    .header-icon { 
+        margin-left: -20px;
+    }
+    .container-myths, .container-legends {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-countries {
+        padding: 100px 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+    .card {
+        width: 90%;
+        max-width: 350px;
+    }
+    .card-text
+    {
+        font-size: 26px;
+    }
+    .footer {
         flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
         padding: 20px 30px;
     }
 
     .footer-columns {
-        display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .footer-left {
-        flex: 1;
-        text-align: left;
-        padding: 0;
-        margin: 0;
-    }
-
-    .footer-left ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .footer-right {
-        flex: 1;
-        text-align: right;
-        padding: 0;
-        margin: 0;
-    }
-
-    .footer-right ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-}
-
-@media (min-width: 1024px) {
-    .container-myths, .container-legends {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 
-    .myth-card, .legend-card {
-        width: 100%;
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 20px 50px;
-    }
-
-    .footer-columns {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .footer-left {
-        flex: 1;
-        text-align: left;
-    }
-
-    .footer-right {
-        flex: 1;
-        text-align: right;
+    .footer-left, .footer-right {
+        min-width: 200px;
     }
 }
+@media (min-width: 1024px) {
+    .menu {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .profile-link img {
+        width: 45px;
+        height: 45px;
+    }
+    .menu-container {
+        position: absolute;
+        top: 60px;
+        right: 60px;
+        margin-right: 5px; 
+        display: flex;
+        gap: 5px; 
+    }  
+    .container-myths, .container-legends {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .myth-card {
+        width: 250px;
+    }
+    .header-icon { 
+        top: 35px;
+        left: 70px;
+        width: 100px;
+    }
+    .container-countries
+    {
+        padding-top: 150px;
+    }
+    .footer-right img {
+        margin-bottom: 10px;
+    }
+} 
